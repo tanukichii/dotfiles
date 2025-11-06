@@ -1,5 +1,1 @@
-if [[ "$(tty)" == "/dev/tty1" ]]; then
-    if hyprlock; then 
-        exec Hyprland
-    fi
-fi
+[[ "$(tty)" == "/dev/tty1" ]] && exec Hyprland

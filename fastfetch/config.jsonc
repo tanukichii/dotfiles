@@ -1,0 +1,49 @@
+{
+    "$schema": "https://github.com/fastfetch-cli/fastfetch/raw/dev/doc/json_schema.json",
+    "logo": {
+        "source": "~/.config/fastfetch/saber.png",
+        "type": "kitty-direct",
+        "width": 20,
+        "padding": {
+            "top": 1
+        }
+    },
+    "display": {
+        "separator": " ›  "
+    },
+    "modules": [
+    "break",
+        {
+            "type": "os",
+            "key": " ",
+            "keyColor": "31",  // = color1
+        },
+        {
+            "type": "kernel",
+            "key": " ",
+            "keyColor": "32",
+        },
+        {
+            "type": "packages",
+            "format": "{} (pacman)",
+            "key": " ",
+            "keyColor": "33",  
+        },
+         {
+            "type": "uptime",
+            "key": " ",
+            "keyColor": "34", 
+        },
+        {
+            "type": "terminal",
+            "key": " ",
+            "keyColor": "35", 
+        },
+        {
+            "type": "wm",
+             "key": " ",
+            "keyColor": "36", 
+        },
+        "break",
+    ]
+}

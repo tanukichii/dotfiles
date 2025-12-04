@@ -80,5 +80,13 @@ return {
 			capabilities = capabilities,
 		}
 		vim.lsp.enable("pyright")
+
+        nvim_lsp.opts = {
+            servers = {
+                clangd = {
+                    mason = false,
+                },
+            },
+        }
 	end,
 }
